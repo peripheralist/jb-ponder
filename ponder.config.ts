@@ -99,7 +99,7 @@ const JBTokens = {
       },
     },
   },
-  testNets: {
+  testnets: {
     abi: JBTokensAbi,
     address: ADDRESS.jbTokens,
     network: {
@@ -404,25 +404,25 @@ export const testnetConfig = createConfig({
         },
       },
     },
-    JBTokens: JBTokens.testNets,
+    JBTokens: JBTokens.testnets,
     ERC20: {
       abi: erc20Abi,
       network: {
         ethereumSepolia: {
           address: deployErc20FactoryConfig,
-          startBlock: JBTokens.testNets.network.ethereumSepolia?.startBlock,
+          startBlock: JBTokens.testnets.network.ethereumSepolia?.startBlock,
         },
         arbitrumSepolia: {
           address: deployErc20FactoryConfig,
-          startBlock: JBTokens.testNets.network.arbitrumSepolia?.startBlock,
+          startBlock: JBTokens.testnets.network.arbitrumSepolia?.startBlock,
         },
         baseSepolia: {
           address: deployErc20FactoryConfig,
-          startBlock: JBTokens.testNets.network.baseSepolia?.startBlock,
+          startBlock: JBTokens.testnets.network.baseSepolia?.startBlock,
         },
         optimismSepolia: {
           address: deployErc20FactoryConfig,
-          startBlock: JBTokens.testNets.network.optimismSepolia?.startBlock,
+          startBlock: JBTokens.testnets.network.optimismSepolia?.startBlock,
         },
       },
     },
